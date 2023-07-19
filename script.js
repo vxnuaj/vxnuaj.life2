@@ -48,6 +48,65 @@ setInterval(() =>{
 let d = new Date ();
 time.innerHTML = d.toLocaleTimeString ();
 
+// Get the play button and the audio element
+const playButton = document.querySelector('.play');
+const audioPlayer = document.getElementById('audioPlayer');
+
+// Set the starting time in seconds and the fade-in duration in milliseconds
+const startTime = 0; // Replace with the desired start time in seconds
+const fadeInDuration = 3000; // Replace with the desired fade-in duration in milliseconds
+
+// Flag to check if it's the first play
+let isFirstPlay = true;
+
+// Variable to store the last currentTime
+let lastTime = 0;
+
+
+// Function to play or pause the audio
+function toggleAudio() {
+    if (audioPlayer.paused) {
+        if (isFirstPlay) {
+            audioPlayer.currentTime = startTime; // Set the starting time
+
+            const interval = 50; // Interval for updating the volume (in milliseconds)
+            const steps = fadeInDuration / interval; // Number of steps for the fade-in effect
+            const stepSize = 1 / steps; // Incremental change in volume for each step
+
+            audioPlayer.volume = 0; // Start with volume set to 0
+
+            audioPlayer.play();
+            playButton.classList.add('playing');
+
+            let currentStep = 0;
+            const fadeInterval = setInterval(() => {
+                currentStep++;
+                if (currentStep >= steps) {
+                    clearInterval(fadeInterval);
+                    audioPlayer.volume = 1; // Ensure the volume is set to 1 at the end
+                } else {
+                    audioPlayer.volume = currentStep * stepSize;
+                }
+            }, interval);
+
+            // Update the flag to indicate it's not the first play anymore
+            isFirstPlay = false;
+        } else {
+            // If it's not the first play, continue from the last paused time
+            audioPlayer.currentTime = lastTime;
+            audioPlayer.play();
+            playButton.classList.add('playing');
+        }
+    } else {
+        // Pause the audio and store the current time
+        audioPlayer.pause();
+        playButton.classList.remove('playing');
+        lastTime = audioPlayer.currentTime;
+    }
+}
+
+// Add the click event listener to the play button
+playButton.addEventListener('click', toggleAudio);
 
 
 
@@ -123,3 +182,5 @@ particlesJS("bg", {
     requestAnimationFrame(update);
   };
   requestAnimationFrame(update);
+
+  

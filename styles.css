@@ -8,6 +8,7 @@
 
 a {
     color: inherit;
+    text-decoration: none;
 }
 
 i{
@@ -16,10 +17,11 @@ i{
 
 
 html {
-    background: rgb(0, 0, 0);
+    background: #000000;
     cursor: none;
     height: 100%;
-    overflow: hidden;
+    overflow: scroll;
+    overflow-x: hidden;
 }
 
 #bg {
@@ -237,6 +239,8 @@ ul li a{
     width: fit-content;
     left: 1265px;
     height: fit-content;
+    top: 150px;
+    
 }
 
 .disrupttxt {
@@ -490,10 +494,9 @@ text-underline-offset: 5px;
     font-size: 35px;
     font-weight: 600;
     position: relative;
-    top: 134px;
-    left: 333px;
+    top: 104px;
+    left: 320px;
     width: fit-content;
-    letter-spacing: 2px;
     font-family: montserrat;
     border: 0px solid #ddd;
     height: 50px;
@@ -508,10 +511,9 @@ text-underline-offset: 5px;
     font-size: 35px;
     font-weight: 600;
     position: relative;
-    top: 180px;
+    top: 150px;
     left: 165px;
     width: fit-content;
-    letter-spacing: 2px;
     font-family: montserrat;
 }
 
@@ -544,7 +546,7 @@ text-underline-offset: 5px;
     font-size: 17px;
     font-weight: 250;
     position: relative;
-    top: 180px;
+    top: 150px;
     left: 165px;
     letter-spacing: 1px;
     line-height: 1.5;
@@ -583,7 +585,7 @@ color: rgb(255, 255, 255);
 font-weight: 500;
 position: relative;
 left: 165px;
-top: 240px;
+top: 210px;
 font-size: 16px;
 }
 
@@ -591,23 +593,29 @@ font-size: 16px;
     color: rgb(255, 255, 255);
     font-weight: 500;
     position: relative;
-    left: 255px;
-    top: 220px;
+    left: 261px;
+    top: 190px;
     font-size: 16px;
 }
 
 .msgme {
     position: relative;
-    top: 230px;
+    top: 200px;
     left: 165px;
     font-weight: 500;
 }
 
+.msgme:hover{
+    text-decoration:underline;
+text-decoration-style: dotted;
+text-underline-offset: 5px;
+}
 .externallink {
     position: relative;
     height: 20px;
     width: 20px;
     top: 4px;
+    text-decoration: none;
 }
 
 .slinks{
@@ -624,7 +632,7 @@ font-size: 16px;
 .sicons {
     position: absolute;
     left: 1340px;
-    top: 530px;
+    top: 580px;
     width: 10px;
 }
 
@@ -665,3 +673,175 @@ font-size: 16px;
     left: 2px;
 }
 
+.play {
+    height: fit-content;
+    width: fit-content;
+    position: relative;
+    left: 165px;
+    top: 215px;
+    display: inline-block;
+}
+
+.playbtn{
+    height: 14px;
+    width: 20px;
+    position: relative;
+    left: 5px;
+    top: 1px;
+}
+
+/*/disrupt.html/*/
+
+.disrupttitle {
+font-family: inter;
+font-size: 60px;
+font-weight: 600;
+position: absolute;
+left: 590px;
+top: 100px;
+}
+
+.disruptapp {
+    width: 205px;
+    height: 205px;
+    position: absolute;
+    left: 617px;
+    top: 200px;
+    transition: .4s ease-in-out;
+    z-index: 2;
+}
+
+.disruptapp:hover {
+    transform: scale(120%) rotate(-30deg);
+}
+
+.disruptdes {
+    position: absolute;
+    font-weight: 500;
+    text-align: center;
+    top: 445px;
+    font-size: 20px;
+    line-height: 1.5;
+    width: fit-content;
+    left: 483px;
+}
+
+.seva-form{
+    position: absolute;
+    left: 595px;
+    top: 610px;
+}
+
+.disrupthd {
+    position: absolute;
+    top: -47px;
+    opacity: 60%;
+
+}
+
+.horline {
+    position: relative;
+    color: white;
+    background-color: white;
+    top: 295px;
+    width: 220px;
+    left: 360px;
+        opacity: 60%;
+
+}
+
+.disruptside{
+    position: relative;
+    color: white;
+    top: 304px;
+    left: 280px;
+    opacity: 60%;
+    width: fit-content;
+}
+
+.vl {
+    border-left: 1px solid rgb(255, 255, 255);
+    height: 500px;
+    position: absolute;
+    left: 315px;
+    top: 340px;
+    opacity: 60%;
+
+  }
+
+  .features {
+    position: relative;
+    color: white;
+    opacity: 60%;
+    top: 835px;
+    left: 267px;
+    width: fit-content;
+  }
+
+  .horline2 {
+    position: relative;
+    color: white;
+    background-color: white;
+    top: 825px;
+    width: 105px;
+    left: 360px;
+        opacity: 60%;
+  }
+
+  .disrupt4{
+    position: absolute;
+    left: 485px;
+    top: 853px;
+  }
+
+ 
+  .dstitle4{
+    position: relative;
+    font-size: 20px;
+    width: fit-content;
+    opacity: 70%;
+    text-decoration:underline;
+    text-decoration-style: dotted;
+    text-underline-offset: 8px;
+    transition: .25s;
+  }
+
+  .dstitle4:hover{
+    opacity: 1;
+  }
+
+  .dsdes4:hover{
+    opacity: 1;
+  }
+
+  .dsdes4{
+    position: relative;
+    font-size: 15px;
+    width: fit-content;
+    opacity: 70%;
+    top: 15px;
+    line-height: 1.5;
+    transition: .25s;
+  }
+
+
+
+  .time2{
+    position: absolute;
+    left: 510px;
+    top: -145px;
+  }
+
+  .play2{
+    position: absolute;
+    left: 1110px;
+    top: 620px;
+    transform: rotate(-90deg);
+    width: fit-content;
+    opacity: 80%;
+    transition: .25s ease-in-out;
+   }
+
+   .play2:hover {
+    opacity: 100%;
+   }
