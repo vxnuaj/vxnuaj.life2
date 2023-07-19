@@ -109,7 +109,6 @@ function toggleAudio() {
 playButton.addEventListener('click', toggleAudio);
 
 
-/*/
 
 
 particlesJS("bg", {
@@ -185,4 +184,3 @@ particlesJS("bg", {
   };
   requestAnimationFrame(update);
 
-  /*/
