@@ -38,8 +38,18 @@ window.addEventListener('DOMContentLoaded', ()=> {
     })
 })
 
+/*/time /*/
+let time = document.getElementById("time")
 
-/*/particles
+setInterval(() =>{
+  let d = new Date ();
+  time.innerHTML = d.toLocaleTimeString ();
+},1000)
+let d = new Date ();
+time.innerHTML = d.toLocaleTimeString ();
+
+
+
 
 particlesJS("bg", {
     particles: {
@@ -112,4 +122,4 @@ particlesJS("bg", {
     }
     requestAnimationFrame(update);
   };
-  requestAnimationFrame(update);/*/
+  requestAnimationFrame(update);
