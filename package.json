@@ -1,5 +1,9 @@
 {
   "dependencies": {
-    "kursor": "^0.1.6"
+    "kursor": "^0.1.6",
+    "three": "^0.154.0"
+  },
+  "devDependencies": {
+    "vite": "^4.4.5"
   }
 }
