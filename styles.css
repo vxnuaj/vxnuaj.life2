@@ -32,7 +32,6 @@ html {
     left: 0;
     bottom: 0;
     right: 0;
-    z-index: 1;
 }
 
 
@@ -493,7 +492,7 @@ text-underline-offset: 5px;
 /* home | main  content */
 .innergreeting {
     
-    color: #c56fff;
+    color: #ffffff;
     font-size: 35px;
     position: relative;
     top: 104px;
@@ -516,11 +515,13 @@ text-underline-offset: 5px;
     left: 165px;
     width: fit-content;
     font-family: montserrat;
+    font-weight: 600;
 }
 
 .innergreeting span {
-    color: #6f9aff;
+    color: #ffffff;
     position: relative;
+    font-weight: 600;
     animation: animation 20s ease infinite;
 }
 
@@ -557,7 +558,7 @@ text-underline-offset: 5px;
 }
 
 .purple {
-    color: #6f9aff;
+    color: #ffffff;
     font-weight: 600;
 }
 
@@ -587,7 +588,7 @@ font-weight: 500;
 position: relative;
 left: 165px;
 top: 210px;
-font-size: 16px;
+
 }
 
 .gburg {
@@ -864,7 +865,7 @@ top: 100px;
     font-size: 20px;
     position: absolute;
     left: 200px;
-    top: 200px;
+    top: 190px;
     line-height: 1.5;
    }
 
@@ -896,7 +897,7 @@ top: 100px;
     border-top: 1px solid rgba(255, 255, 255, 0.264);
     backdrop-filter: blur(1px);
     margin-right: 100px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     transition: .25s;
    }
 
@@ -999,7 +1000,7 @@ top: 100px;
     border-top: 1px solid rgba(255, 255, 255, 0.264);
     backdrop-filter: blur(1px);
     margin-right: 100px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     transition: .25s;
    }
 
@@ -1033,6 +1034,83 @@ top: 100px;
     left: 0px;
 }
 
+.vl3 {
+    border-left: 1.5px solid rgb(255, 255, 255);
+    height: 210px;
+    position: absolute;
+    left: 245px;
+    top: 660px;
+    opacity: 60%;
+}
+
+.prline3{
+    position: absolute;
+    top: 895px;
+    left: 285px;
+    opacity: 70%;
+    width: 195px; 
+}
+
+.playtxt {
+    position: absolute;
+    top: 885px;
+    left: 223px;
+    opacity: 70%;
+}
+
+.container3 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+    width: fit-content;
+    left: 530px;
+    top: 860px;
+    display: inline-block;
+   }
+
+   .container3 .card3 {
+    position: relative;
+    height: 70px;
+    width: 70px;
+    background-color: rgba(255, 255, 255, 0.10);
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1px solid;
+    border-top: 1px solid rgba(255, 255, 255, 0.264);
+    backdrop-filter: blur(1px);
+    margin-right: 100px;
+    margin-bottom: 10px;
+    transition: .25s;
+   }
+
+    .container3 .card3 .content {
+    padding: 20px;
+    transition: .05s;
+}   
+
+.container3 p {
+    text-align: center;
+    width: fit-content;
+    font-weight: 500;
+    position: relative;
+    left: -3px;
+    line-height: 1.5;
+}   
+
+.card3:hover {
+    transform: scale(120%) perspective(5000px) rotateY(30deg) rotateX(20deg);
+}
+
+.dspurp {
+    height: 70px;
+}
+
 /*/disrupt 3js/*/
 
 .disruptbody {
@@ -1040,3 +1118,48 @@ top: 100px;
     background-color: black;
     z-index: 4;
 }
+
+.time4{
+    position: absolute;
+    left: 0px;
+    top: 385px;
+    font-size: 30px;
+}
+
+.disrupt3txt {
+    position: absolute;
+    color: white;
+    left: 140px;
+    top: -280px;
+    width: 325px;
+    display: inline;
+    height: fit-content;
+    font-weight: 400;
+}
+
+
+
+.disrupt3des {
+    position: relative;
+    font-weight: 300;
+}
+
+.play3 {
+    position: absolute;
+    left: 1110px;
+    top: 630px;
+    transform: rotate(-90deg);
+    width: fit-content;
+    opacity: 80%;
+    transition: .25s ease-in-out;
+   }
+
+   .disrupt3des {
+    font-size: 17px;
+    font-weight: 400;
+    position: relative;
+    top: 20px;
+    line-height: 1.5;
+   }
+
+   
