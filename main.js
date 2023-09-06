@@ -2,12 +2,12 @@ let intro = document.querySelector('.intro')
 let logo = document.querySelector ('.logo-header')
 let logoSpan = document.querySelectorAll ('.logo')
 
-//cursor
+/*/cursor
 new kursor ({
     type:2,
     removeDefaultCursor: true,
     color: "#ffffff"
-});
+}); /*/
 
 //mf splash page
 

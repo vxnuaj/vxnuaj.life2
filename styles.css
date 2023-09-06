@@ -18,7 +18,7 @@ i{
 
 html {
     background-color: black;
-    cursor: none;
+
     height: 0px;
     overflow: scroll;
     overflow-x: hidden;
@@ -605,6 +605,7 @@ top: 210px;
     top: 200px;
     left: 165px;
     font-weight: 500;
+    width: fit-content;
 }
 
 .msgme:hover{
@@ -695,7 +696,7 @@ text-underline-offset: 5px;
 /*/disrupt.html/*/
 
 .disrupttitle {
-font-family: inter;
+font-family: inherit;
 font-size: 60px;
 font-weight: 600;
 position: absolute;
